@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <center>
+            <h1>JSF Form</h1>
+            <h:form>
+                <table border="1">
+                    <tr>
+                        <th colspan="2">HTML INput Tags</th>
+                    </tr>
+                    <tr>
+                        <td><h:outputLabel>Username</h:outputLabel></td>
+                        <td><h:inputText required="true" id="un" validatorMessage="Username is required"/></td>
+                    </tr>
+                    <tr>
+                        <td><h:outputLabel>Address</h:outputLabel></td>
+                        <td><h:inputTextarea required="true" id="address"/></td>
+                    </tr>
+                    <tr>
+                        <td><h:outputLabel>Password</h:outputLabel></td>
+                        <td><h:inputSecret/></td>
+                    </tr>
+                    <tr>
+                        <td><h:outputLabel>Hidden TextBox</h:outputLabel></td>
+                        <td><h:inputHidden/></td>
+                    </tr>
+                    <tr>
+                        <td><h:commandButton type="submit" action="success" value="Submit"/></td>
+                        <td><h:commandButton type="reset" value="Reset"/></td>
+                    </tr>
+                </table>
+            </h:form>
+            
+            <hr/>
+            <hr/>
+            <h2>HTML Output Tags</h2>
+            
+            <h:form>
+                <h:inputSecret id="email">
+                    <h:outputLabel for="email" value="Email"/>
+                </h:inputSecret>
+                <tr>
+                        <td><h:commandButton type="submit" action="success" value="Submit"/></td>
+                </tr>
+            </h:form>
+            <h:outputText value="JSF outputtext tag"/>
+            <br/>
+            
+            <h:outputLink value="https://www.google.com" >
+                <h:outputText value="Click"/>
+            </h:outputLink>
+            
+            <br/>
+            <h:outputFormat value="Hello, {0}">
+                <f:param value="India"/>
+                <f:param value="China"/>
+                <f:param value="USA"/>
+                <f:param value="Australia"/>
+            </h:outputFormat>
+            
+            <br/>
+            
+            <h:graphicImage value="download.png" />
+            
+            <hr/>
+            <hr/>
+            <h2>Selection Tags JSF</h2>
+            <h:selectBooleanCheckbox/>
+            <h:outputText value="Boolean CheckBox"/>
+            
+            <br/>
+            <br/>
+            <h:outputText value="Select ONeListBox"/>
+            <br/>
+            <h:selectOneListbox value="Select car brand">
+                <f:selectItem itemLabel="Audi"/>
+                <f:selectItem itemLabel="BMW"/>
+                <f:selectItem itemLabel="Mercedes"/>
+                <f:selectItem itemLabel="Suzuki"/>
+                <f:selectItem itemLabel="Hyundai"/>
+            </h:selectOneListbox>
+            <br/>
+            <br/>
+            
+            <h:outputText value="Select OneMenu"/>
+            <br/>
+            <h:selectOneMenu>
+                <f:selectItem itemLabel="Audi"/>
+                <f:selectItem itemLabel="BMW"/>
+                <f:selectItem itemLabel="Mercedes"/>
+                <f:selectItem itemLabel="Suzuki"/>
+                <f:selectItem itemLabel="Hyundai"/>
+            </h:selectOneMenu>
+            
+            <br/>
+            <br/>
+            
+            <h:outputText value="Select OneRadio"/>
+            <br/>
+            <h:selectOneRadio layout="lineDirection">
+                <f:selectItem itemLabel="Audi"/>
+                <f:selectItem itemLabel="BMW"/>
+                <f:selectItem itemLabel="Mercedes"/>
+                <f:selectItem itemLabel="Suzuki"/>
+                <f:selectItem itemLabel="Hyundai"/>
+            </h:selectOneRadio>
+            
+            <br/>
+            <br/>
+            <h:outputText value="Select ManyListbox"/>
+            <br/>
+            <h:selectManyListbox>
+                <f:selectItem itemLabel="Audi"/>
+                <f:selectItem itemLabel="BMW"/>
+                <f:selectItem itemLabel="Mercedes"/>
+                <f:selectItem itemLabel="Suzuki"/>
+                <f:selectItem itemLabel="Hyundai"/>
+            </h:selectManyListbox>
+            
+            
+            <br/>
+            <br/>
+            <h:outputText value="Select ManyCheckBox"/>
+            <br/>
+            <h:selectManyCheckbox layout="pageDirection" >
+                <f:selectItem itemLabel="Audi" itemValue="Audi"/>
+                <f:selectItem itemLabel="BMW" itemValue="BMW"/>
+                <f:selectItem itemLabel="Mercedes" itemValue="Mercedes"/>
+                <f:selectItem itemLabel="Suzuki" itemValue="Suzuki"/>
+                <f:selectItem itemLabel="Hyundai" itemValue="Hyundai"/>
+            </h:selectManyCheckbox>
+            
+            <br/>
+            <br/>
+            <h:outputText value="Select ManyMenu"/>
+            <br/>
+            <h:selectManyMenu>
+                <f:selectItem itemLabel="Audi" itemValue="Audi"/>
+                <f:selectItem itemLabel="BMW" itemValue="BMW"/>
+                <f:selectItem itemLabel="Mercedes" itemValue="Mercedes"/>
+                <f:selectItem itemLabel="Suzuki" itemValue="Suzuki"/>
+                <f:selectItem itemLabel="Hyundai" itemValue="Hyundai"/>
+            </h:selectManyMenu>
+            
+            <br/>
+            <h:panelGrid columns="3">
+                <f:facet name="header">
+                    This is header
+                </f:facet>
+                <h:inputText/>
+                <h:inputText/>
+                <h:inputText/>
+                <h:inputText/>
+                <h:inputText/>
+                <h:inputText/>
+                <h:inputText/>
+                <h:inputText/>
+                <h:inputText/>
+            </h:panelGrid>
+            
+            <br/>
+            <br/>
+            <h:panelGrid columns="3" border="1">
+                <f:facet name="header">
+                    This is header
+                </f:facet>
+                <h:inputText/>
+                <h:inputText/>
+                <h:inputText/>
+                <h:inputText/>
+                <h:inputText/>
+                <h:inputText/>
+                <h:inputText/>
+                <h:inputText/>
+                <h:inputText/>
+                <f:facet name="footer">
+                    <h:panelGroup>
+                        <h:outputText value="Enter Username"/>
+                        <h:inputText/>
+                        <h:commandButton value="Submit" type="submit"/>
+                    </h:panelGroup>
+                </f:facet>
+            </h:panelGrid>
+            
+            <h:message for="un"/><br/>
+            <h:message for="address"/><br/>
+            <h:messages/><br/>
+        </center>
+    </h:body>
+</html>
+
+

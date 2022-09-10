@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <f:ajax event="change" execute="menu" render="outputmessage">
+                <h:selectOneMenu id="menu" value="#{countryDetails.name}" title="Select Country">
+                    <f:selectItem id="drl1" itemValue="India" />
+                    <f:selectItem id="drl2" itemValue="Sri_Lanka" />
+                    <f:selectItem id="drl3" itemValue="China" />
+                    <f:selectItem id="drl4" itemValue="USA" />
+                    <f:selectItem id="drl5" itemValue="Afghanistan" />
+                    <f:selectItem id="drl6" itemValue="Taiwan" />
+                </h:selectOneMenu>
+                <br/>
+                <h:outputText id="outputmessage" value="#{countryDetails.description}"/>
+            </f:ajax>
+            
+        </h:form>
+    </h:body>
+</html>
+

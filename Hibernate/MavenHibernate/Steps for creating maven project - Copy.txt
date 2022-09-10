@@ -1,0 +1,52 @@
+Create Maven Project:
+
+	When we create any java application like web apps, desktop app,
+	android application. You'll require jar files.
+
+	eg. Connecting database we require jar file.
+	    For sending email we require email jar file.
+
+	So, handling multiple jar files, downloading and
+	managing jar versions is very difficult.
+
+	So, for managing dependencies we can create maven project.
+	Maven Project gives on xml file where we can put our jar file
+	names and it will download all jar files for us in 
+	central repository (in one local folder instead of our project).	
+
+
+	Steps for creating maven project:
+
+	
+	
+	1) Click on file -> new -> maven project -> next	
+	2) In Archetypes search for quickstart and select apache maven quickstart -> next
+	3) Give group id (base package name) and achetype id (project name) -> finish.
+	
+			base package name -> com.niit
+			project name	  -> hibernate
+
+	
+	
+	4) goto pom.xml file and put hibernate core & mysql dependency.
+	   copy dependency from mvnrepository website.
+	   copy mysql dependency from mvnrepository.
+		
+	
+	5) Create model (User.java)
+	6) Right click on project -> properties -> java build path 
+	7) Under source -> click add folder -> click on main -> click on new folder
+			-> give folder name as resources -> finish.
+
+	8) Create hibernate.cfg.xml file in resources folder
+	9) Create DbConfig File.
+
+	11) UserDAO interface for user methods.
+	12) UserDAOIMPL implementation of methods.
+	13) User Test java file.
+	
+
+	
+	
+		
+	

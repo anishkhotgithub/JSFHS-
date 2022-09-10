@@ -1,0 +1,47 @@
+
+
+Spring Framework:
+
+	Spring Framework is called framework of frameworks:
+
+	1) Spring MVC	(Model, View & Controller)
+	2) Spring Core	(Core Logic)
+	3) Spring AOP	(Aspect Oriented Programming)
+	4) Spring Boot	(Easy Configurations)
+	5) Spring JPA	(Java Persistent API)
+
+
+Maven Project:
+	Maven Project helps to handle all jar files (dependencies).
+
+
+Create First Spring Maven Project:
+
+	Create new maven project.
+	Select apache maven webapp.
+	Give group id as com.niit
+
+		Here com means commercial app
+		and niit is company name.
+
+	In artifact write your project name.
+	Finish.
+
+	Right click on project.
+	Properties.
+	Target Runtime -> Check apache tomcat server and click finish.
+	Right click on project.
+	Properties.
+	Java Build Path -> Order and export tab -> check all the boxes and click finish.
+
+	Goto pom.xml file and add spring web mvc dependency.
+	You can copy dependency from mvnrepository website.
+	Create folder under web-inf and put your jsp files there.
+	Create web.xml and dispatcher-servlet.xml files under web-inf folder.
+	
+	Create your java controller.
+	
+
+
+
+	

@@ -1,0 +1,14 @@
+JSFHS 	- JSF, Hibernate & Spring
+JSF 	- Java Server Faces 
+
+Technologies - JSP, Servlet
+Framework    - JSF, Spring, Hibernate, Struts
+
+
+
+JDK Link:
+	https://drive.google.com/file/d/1_GbtniyizXQOmHOfxs2krXJo3-cAkkyV/view?usp=sharing
+
+Netbeans:
+	https://netbeans.org/downloads/old/8.2/
+

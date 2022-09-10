@@ -1,0 +1,101 @@
+Hibernate
+
+	1) Database Independent
+	2) ReadyMade Database Code
+
+
+	Hibernate:
+		1) HQL Query (Hibernate Query Language)
+		2) In-Built Methods
+		3) SQL Query
+
+	ORM - Object Relational Mapping
+
+	Object 		- Class
+	Relational	- Database tables
+	Mapping
+	
+	
+	We are going to map our class with table.
+
+	Employees(table)
+		employeeid
+		employeename
+
+	Employee (class)
+		employeeid
+		employeename
+
+
+	
+
+	1) Goto services tab
+	2) Expand databases node
+	3) Right click on java db -> start server.
+	4) Right click on java db -> create database.
+	5) Put databasename, username and password.
+	6) Expand your database connection.
+	7) Right click on tables folder -> execute command.
+	8) Write sql query to create table.
+	
+
+		create table employees
+		(
+		    employeeid int primary key,
+		    employeename varchar(40)
+		)
+
+
+
+	HibernateDemo 1:
+	1st way to map class and table:
+
+	Create new java web project:
+
+	1) Give project name -> next -> next
+	2) Ensure that hibernate checkbox is checked.
+	3) Ensure that your database name is selected from dropdown.
+
+	4) Click on hibernate.cfg.xml file
+	5) Add your driver, database name, url and password.
+	6) Create a class with getters and setters.
+	7) Right click on source packages -> other -> hibernate.
+	8) Hibernate mapping wizard.
+	9) Give a hbm file name same as class name for which your are creating a mapping.
+
+			Employee.hbm.xml
+
+	10)Write class name in class to map text box
+	11)Select your table from the drop down list -> finish.
+ 	12)Close class tag explicitly and write tags to map your variables and columns.
+
+
+
+	2nd way:
+	Reverse Engineering Wizard:
+	
+	1) Create new hibernate project.
+	2) Goto hibernate.cfg.xml and add your database information.
+	3) Right click on source package -> new -> other -> hibernate
+	4) Create hibernate reverse engineering wizard.
+	5) Dont change name of this reverse engineering wizard file and add your tables.
+	6) Right click on source package -> new -> other -> hibernate
+	6) Hibernate mapping file and pojo from databases.
+	7) write package name and finish.
+
+
+
+
+	3rd way:
+	Using Annotations:
+	
+	1) Create new hibernate project.
+	2) Goto hibernate.cfg.xml and add your database information.
+	3) Create java class with annotations.
+	4) Register your java class in hibernate.cfg.xml file.
+	
+
+
+
+
+	

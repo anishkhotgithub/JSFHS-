@@ -1,0 +1,40 @@
+Spring Frontend Project:
+
+	1) Download tomcat zip file from following link:
+
+			https://tomcat.apache.org/download-90.cgi
+
+	2) Extract tomcat zip file in any directory.
+	3) Click on server tab and select tomcat and browse for tomcat folder.
+	4) Create new maven project
+	5) Select archetype as apache maven webapp.
+	6) Give group id and artifact id and click finish.
+	7) Right click on project -> properties.
+	8) Target runtime -> Check apache tomcat server and click finish.
+	9) Right click on project -> java build path -> order and export tab.
+	10) Check all checkkboxes and click apply and close.
+	11) Add Spring web mvc dependency in project. (get dependency from mvnrepository)
+	12) Put your index.jsp file in side /web-inf/views/index.jsp
+	13) Create web.xml file
+	14) Create dispatcher-servlet.xml file.
+	15) Create Controller class in proper package which you've mentioned in dispatcher xml.
+	16) To connect backend project to frontend project
+			add your backend project dependency in frontend project:
+				
+				eg.
+
+				<dependency>
+				    	<groupId>com.niiit</groupId>
+			  		<artifactId>hibernatebackend</artifactId>
+			  		<version>0.0.1-SNAPSHOT</version>
+				</dependency>
+
+	17) create UserController and adduser.jsp.
+
+		Note: in adduser.jsp file remember to import spring taglib.
+	
+
+	
+	
+	
+	

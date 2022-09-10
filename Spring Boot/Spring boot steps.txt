@@ -1,0 +1,22 @@
+1)  Open Eclipse
+2)  Goto Help -> Eclipse Marketplace -> Spring Boot.
+3)  Install Spring Tools 4 -> Install -> Accept terms and agreements and click install.
+4)  Create new spring start project -> Give project name
+5)  Search spring web dependency and add in project
+6)  Finish.
+7)  Add Tomcat embed jasper dependency in pom.xml from mvnrepository website.
+8)  Add Spring boot starter jpa dependency in pom.xml from mvnrepository website.
+9)  Add MySQL dependency in pom.xml from mvnrepository website.
+10) Add jstl 1.2 jar file.
+11) Remove versions from all dependencies.
+12) Create WEB-INF  folder under webapp folder.
+13) Create views folder under WEB-INF folder.
+14) Create home.jsp in views folder.
+15) Create controller in src/main/java.
+16) in application.properties file add prefix and suffix of your jsp page.
+17) REgister controller in SpringBoot.java file
+18) Create Model Product with annotations
+19) Create ProductRepository interface.
+19) Register it in SpringBoot.java.
+20) Create Productcontroller.
+21) Create products.jsp and addproduct.jsp page.

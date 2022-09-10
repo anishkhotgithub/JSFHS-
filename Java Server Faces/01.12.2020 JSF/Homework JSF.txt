@@ -1,0 +1,15 @@
+Homework:
+
+Create Registration Form & Add Any One type of validation from following:
+	
+	Registration Form:
+		Username
+		Email
+		Contact
+		Address
+		Gender
+		Password	
+	
+	1)Custom
+	2)Form
+	3)Annotation
